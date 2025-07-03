@@ -33,7 +33,13 @@ export const SEED_REPO_FILES = [
 ];
 
 // these are all the non-template directories we expect to find
-export const ALLOWED_DIRECTORIES = ["cli", "node_modules"];
+export const ALLOWED_DIRECTORIES = [
+  "cli",
+  "node_modules",
+  "playwright-tests",
+  "playwright-report",
+  "test-results",
+];
 
 export function getTemplates(templateDirectory: string): Template[] {
   if (path.basename(templateDirectory).endsWith(TEMPLATE_DIRECTORY_SUFFIX)) {
@@ -267,7 +273,12 @@ export async function isDuplicateComment({
 
 export type PRState = "open" | "closed" | "all";
 
-export type PR = { url: string; id: number; state: PRState };
+export type PR = {
+  url: string;
+  html_url: string;
+  id: number;
+  state: PRState;
+};
 
 export type CreatePRConfig = {
   githubToken: string;
