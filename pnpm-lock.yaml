@@ -277,7 +277,7 @@ importers:
     dependencies:
       '@openauthjs/openauth':
         specifier: 0.4.3
-        version: 0.4.3(arctic@2.3.4)(hono@4.7.7)
+        version: 0.4.3(arctic@2.3.4)(hono@4.8.4)
       valibot:
         specifier: ^1.0.0-beta.9
         version: 1.1.0(typescript@5.8.3)
@@ -385,8 +385,8 @@ importers:
         specifier: 15.15.0
         version: 15.15.0
       hono:
-        specifier: 4.7.7
-        version: 4.7.7
+        specifier: 4.8.4
+        version: 4.8.4
       postcss:
         specifier: 8.5.3
         version: 8.5.3
@@ -403,8 +403,8 @@ importers:
   react-router-hono-fullstack-template:
     dependencies:
       hono:
-        specifier: 4.7.7
-        version: 4.7.7
+        specifier: 4.8.4
+        version: 4.8.4
       isbot:
         specifier: 5.1.26
         version: 5.1.26
@@ -498,8 +498,8 @@ importers:
         specifier: 10.4.21
         version: 10.4.21(postcss@8.5.3)
       hono:
-        specifier: 4.7.7
-        version: 4.7.7
+        specifier: 4.8.4
+        version: 4.8.4
       postgres:
         specifier: 3.4.5
         version: 3.4.5
@@ -799,8 +799,8 @@ importers:
   vite-react-template:
     dependencies:
       hono:
-        specifier: 4.7.7
-        version: 4.7.7
+        specifier: 4.8.4
+        version: 4.8.4
       react:
         specifier: 19.0.0
         version: 19.0.0
@@ -5604,6 +5604,10 @@ packages:
 
   hono@4.7.7:
     resolution: {integrity: sha512-2PCpQRbN87Crty8/L/7akZN3UyZIAopSoRxCwRbJgUuV1+MHNFHzYFxZTg4v/03cXUm+jce/qa2VSBZpKBm3Qw==}
+    engines: {node: '>=16.9.0'}
+
+  hono@4.8.4:
+    resolution: {integrity: sha512-KOIBp1+iUs0HrKztM4EHiB2UtzZDTBihDtOF5K6+WaJjCPeaW4Q92R8j63jOhvJI5+tZSMuKD9REVEXXY9illg==}
     engines: {node: '>=16.9.0'}
 
   hosted-git-info@6.1.3:
@@ -11206,12 +11210,12 @@ snapshots:
     dependencies:
       which: 3.0.1
 
-  '@openauthjs/openauth@0.4.3(arctic@2.3.4)(hono@4.7.7)':
+  '@openauthjs/openauth@0.4.3(arctic@2.3.4)(hono@4.8.4)':
     dependencies:
       '@standard-schema/spec': 1.0.0-beta.3
       arctic: 2.3.4
       aws4fetch: 1.0.20
-      hono: 4.7.7
+      hono: 4.8.4
       jose: 5.9.6
 
   '@opennextjs/aws@3.5.7':
@@ -15081,6 +15085,8 @@ snapshots:
       space-separated-tokens: 2.0.2
 
   hono@4.7.7: {}
+
+  hono@4.8.4: {}
 
   hosted-git-info@6.1.3:
     dependencies:
